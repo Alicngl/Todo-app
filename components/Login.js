@@ -21,7 +21,7 @@ export default function Login() {
         startIcon={<GoogleIcon />}
         onClick={loginGoogle}
       >
-        Ali İLE GİRİŞ YAP
+        Ali İLE GİRİŞ YAP !!
       </Button>
     </Grid>
   );
