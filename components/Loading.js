@@ -13,6 +13,7 @@ export default function Loading({ type, color }) {
     >
       <ReactLoading type={type} color={color} height={"7%"} width={"7%"} />
       <h1>asd</h1>
+      asdasdasgi
     </Grid>
   );
 }

@@ -46,10 +46,7 @@ export default function Home() {
         </Head>
         <Box sx={{ display: "flex", justifyContent: "space-between", mt: 3 }}>
           <Avatar src={currentUser.photoURL} />
-          <Typography>
-            {currentUser.displayName}
-            <h1>asd</h1>
-          </Typography>
+          <Typography>{currentUser.displayName}</Typography>
           <Button variant="contained" onClick={() => auth.signOut()}>
             Çıkış
           </Button>
@@ -60,7 +57,15 @@ export default function Home() {
           open={open}
           autoHideDuration={4000}
           onClose={handleClose}
-        ></Snackbar>
+        >
+          <Alert
+            onClose={handleClose}
+            severity={alertType}
+            sx={{ width: "100%" }}
+          >
+            {alertMessage}
+          </Alert>
+        </Snackbar>
         <TodoList />
       </Container>
     </TodoContext.Provider>
